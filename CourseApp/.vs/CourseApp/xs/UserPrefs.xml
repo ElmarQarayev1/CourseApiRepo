@@ -1,0 +1,86 @@
+﻿<Properties StartupConfiguration="{7707CD6E-0247-4C43-89A2-AEAB5F8DA4B8}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Course.Api PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Course.Service/Implementations/StudentService.cs">
+    <Files>
+      <File FileName="Course.Api/Program.cs" />
+      <File FileName="Course.Api/appsettings.json" />
+      <File FileName="Course.Core/Entities/Group.cs" Line="1" Column="1" />
+      <File FileName="Course.Core/Entities/BaseEntity.cs" />
+      <File FileName="Course.Core/Entities/AuditEntity.cs" />
+      <File FileName="Course.Core/Entities/Student.cs" Line="17" Column="6" />
+      <File FileName="Course.Data/Configurations/GroupConfiguration.cs" />
+      <File FileName="Course.Data/Configurations/StudentConfiguration.cs" />
+      <File FileName="Course.Data/AppDbContext.cs" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupCreateDto.cs" Line="29" Column="1" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupDetailsDto.cs" Line="1" Column="1" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupGetDto.cs" Line="15" Column="1" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupUpdateDto.cs" />
+      <File FileName="Course.Service/Interfaces/IGroupService.cs" Line="16" Column="1" />
+      <File FileName="Course.Service/Exceptions/DublicateEntityException.cs" />
+      <File FileName="Course.Service/Exceptions/EntityNotFoundException.cs" />
+      <File FileName="Course.Api/Controllers/StudentsController.cs" />
+      <File FileName="Course.Api/Controllers/GroupsController.cs" Line="33" Column="1" />
+      <File FileName="Course.Service/Implementations/GroupService.cs" Line="55" Column="1" />
+      <File FileName="Course.Service/Interfaces/IStudentService.cs" />
+      <File FileName="Course.Service/Implementations/StudentService.cs" Line="103" Column="1" />
+      <File FileName="Course.Service/Exceptions/RestException.cs" />
+      <File FileName="Course.Api/Middlewares/ExceptionHandlerMiddleware.cs" Line="16" Column="16" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentUpdateDto.cs" Line="34" Column="67" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentCreateDto.cs" Line="28" Column="1" />
+      <File FileName="Course.Api/logs/myCrazyConfigLog-20240608.txt" />
+      <File FileName="Course.Data/Migrations/20240610195219_addedimg.cs" />
+      <File FileName="Course.Data/Repostories/Implementations/GroupRepository.cs" Line="16" Column="1" />
+      <File FileName="Course.Data/Repostories/Implementations/StudentRepository.cs" Line="15" Column="1" />
+      <File FileName="Course.Data/Repostories/Implementations/Repository.cs" Line="17" Column="10" />
+      <File FileName="Course.Data/Repostories/Interfaces/IGroupRepository.cs" Line="11" Column="1" />
+      <File FileName="Course.Data/Repostories/Interfaces/IStudentRepository.cs" Line="11" Column="1" />
+      <File FileName="Course.Data/Repostories/Interfaces/IRepository.cs" Line="17" Column="1" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentGetDto.cs" Line="17" Column="1" />
+      <File FileName="Course.Service/Helpers/FileManager.cs" Line="31" Column="2" />
+      <File FileName="Course.Service/Dtos/StudentDtos/Map.cs" Line="33" Column="14" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentDetailsDto.cs" Line="4" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CourseApp" expanded="True">
+            <Node name="Course.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Middlewares" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="uploads" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Course.Core" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="Course.Data" expanded="True">
+              <Node name="Configurations" expanded="True" />
+              <Node name="Repostories" expanded="True">
+                <Node name="Implementations" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Course.Service" expanded="True">
+              <Node name="Dtos" expanded="True">
+                <Node name="GroupDtos" expanded="True" />
+                <Node name="StudentDtos" expanded="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Implementations" expanded="True">
+                <Node name="StudentService.cs" selected="True" />
+              </Node>
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

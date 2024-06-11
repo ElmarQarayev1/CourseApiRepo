@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "xbv98RpWLF64wuLaJUUTwm0oCd35haMYfokX8KOmQ3I=",
+  "Source": "Course.Api",
+  "BasePath": "_content/Course.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Course.Api/wwwroot",
+      "Source": "Course.Api",
+      "ContentRoot": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/wwwroot/",
+      "BasePath": "_content/Course.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
