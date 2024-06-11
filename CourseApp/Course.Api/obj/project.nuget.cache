@@ -1,17 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "hYfCFVwCWjxFLVN18m419x57bkCuwY1UXA+JJ59DuisFCXM+Fo1sogbT8qQxleqBPRmVFKmoJ54G2knnUD3ZdQ==",
+  "dgSpecHash": "HnPRBqUKIOY=",
   "success": true,
   "projectFilePath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/Course.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/elmar/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/elmar/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/elmar/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/elmar/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/Users/elmar/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.16/microsoft.aspnetcore.cryptography.internal.7.0.16.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.16/microsoft.aspnetcore.cryptography.keyderivation.7.0.16.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.16/microsoft.aspnetcore.identity.entityframeworkcore.7.0.16.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.aspnetcore.openapi/7.0.19/microsoft.aspnetcore.openapi.7.0.19.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
@@ -34,6 +38,8 @@
     "/Users/elmar/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.extensions.identity.core/7.0.16/microsoft.extensions.identity.core.7.0.16.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.extensions.identity.stores/7.0.16/microsoft.extensions.identity.stores.7.0.16.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
@@ -88,7 +94,10 @@
     "/Users/elmar/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
+    "/Users/elmar/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/elmar/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
   ],
   "logs": []
 }

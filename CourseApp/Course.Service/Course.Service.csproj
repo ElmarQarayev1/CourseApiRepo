@@ -17,6 +17,7 @@
     <None Remove="Exceptions\" />
     <None Remove="Dtos\StudentDtos\" />
     <None Remove="Helpers\" />
+    <None Remove="Profiles\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -26,8 +27,10 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Dtos\StudentDtos\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Profiles\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
   </ItemGroup>
 </Project>

@@ -7,9 +7,11 @@ namespace Course.Service.Dtos.StudentDtos
 
         public string Email { get; set; }
 
-        public DateTime Birthdate { get; set; }
-
         public string GroupName { get; set; }
+
+        public string ImageUrl { get; set; }
+
+        public int Age { get; set; }
 
     }
 }

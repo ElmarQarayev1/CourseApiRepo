@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xbv98RpWLF64wuLaJUUTwm0oCd35haMYfokX8KOmQ3I=",
+  "Hash": "ycCladxIpRujoO7FkLe6vb9jnN/QyB6mFzNpGsnEp7c=",
   "Source": "Course.Api",
   "BasePath": "_content/Course.Api",
   "Mode": "Default",
@@ -15,5 +15,25 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/wwwroot/uploads/students/b9961df9-0665-4ca1-8c7d-e4551e33d514teacher1.jpg",
+      "SourceId": "Course.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/wwwroot/",
+      "BasePath": "_content/Course.Api",
+      "RelativePath": "uploads/students/b9961df9-0665-4ca1-8c7d-e4551e33d514teacher1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/students/b9961df9-0665-4ca1-8c7d-e4551e33d514teacher1.jpg"
+    }
+  ]
 }

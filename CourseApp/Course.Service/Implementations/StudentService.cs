@@ -14,6 +14,7 @@ using Course.Service.Dtos.GroupDtos;
 using Microsoft.AspNetCore.Mvc;
 using Course.Service.Helpers;
 using Microsoft.AspNetCore.Hosting;
+using AutoMapper;
 
 namespace Course.Service.Implementations
 {
@@ -21,13 +22,15 @@ namespace Course.Service.Implementations
 	{
         private readonly IStudentRepository _studentRepository;
         private readonly IGroupRepository _groupRepository;
+        private readonly IMapper _mapper;
 
         private readonly IWebHostEnvironment _env;
-        public StudentService(IGroupRepository groupRepository,IStudentRepository studentRepository, IWebHostEnvironment env)
+        public StudentService(IGroupRepository groupRepository,IStudentRepository studentRepository, IWebHostEnvironment env,IMapper mapper)
         {
             _studentRepository = studentRepository;
             _groupRepository = groupRepository;
             _env = env;
+            _mapper = mapper;
 
         }
         public int Create([FromForm] StudentCreateDto createDto)
@@ -55,14 +58,13 @@ namespace Course.Service.Implementations
                 Email = createDto.Email,
                 BirthDate = createDto.Birthdate,
                 GroupId = createDto.GroupId,
-               FileName = FileManager.Save(createDto.File, _env.WebRootPath, "uploads/student")
+               FileName = FileManager.Save(createDto.File, _env.WebRootPath, "uploads/students")
         };
             _studentRepository.Add(student);
             _studentRepository.Save();
 
             return student.Id;
         }
-
         public void Delete(int id)
         {
             Student entity = _studentRepository.Get(x => x.Id == id);
@@ -72,37 +74,27 @@ namespace Course.Service.Implementations
             _studentRepository.Delete(entity);
             _groupRepository.Save();
         }
-        public List<StudentGetDto> GetAll(string? search=null)
+        public List<StudentGetDto> GetAll(string? search = null)
         {
 
-            return _studentRepository.GetAll(x => x.FullName.Contains(search)).Select(x => new StudentGetDto
-            {
-                FullName = x.FullName,
-                Email = x.Email,
-                Birthdate = x.BirthDate,
-                GroupName=x.Group.No
-
-            }).ToList();         
+           
+            var students = _studentRepository.GetAll(x => search == null || x.FullName.Contains(search)).ToList();
+           return  _mapper.Map<List<StudentGetDto>>(students);
+            
         }
 
         public StudentDetailsDto GetById(int id)
         {
-            Student student = _studentRepository.Get(x => x.Id == id && !x.IsDeleted);
+            Student student = _studentRepository.Get(x => x.Id == id && !x.IsDeleted,"Group");
 
-            if (student == null) throw new RestException(StatusCodes.Status404NotFound, "Group not found");
+            if (student == null) throw new RestException(StatusCodes.Status404NotFound, "Student not found");
 
-            return new StudentDetailsDto
-            {
-                FullName = student.FullName,
-                Email = student.Email,
-
-                Birthdate = student.BirthDate,
-                GroupName = student.Group.No
-            };
-            //return Mapper<Student, StudentDetailsDto>.Map(student);
+            return _mapper.Map<StudentDetailsDto>(student);
+           
 
         }
-        public void Update(int id, [FromForm] StudentUpdateDto studentUpdate)
+
+        public void Update(int id, StudentUpdateDto studentUpdate)
         {
             
             var existingStudent = _studentRepository.Get(x => x.Id == id);
@@ -124,6 +116,10 @@ namespace Course.Service.Implementations
                 throw new RestException(StatusCodes.Status400BadRequest, "Group is full!");
             }
 
+            deletedFile = existingStudent.FileName;
+
+            existingStudent.FileName = FileManager.Save(studentUpdate.File, _env.WebRootPath, "uploads/students");
+
             existingStudent.FullName = studentUpdate.FullName;
             existingStudent.Email = studentUpdate.Email;
             existingStudent.BirthDate = studentUpdate.Birthdate;
@@ -134,7 +130,7 @@ namespace Course.Service.Implementations
 
             if (deletedFile != null)
             {
-                FileManager.Delete(_env.WebRootPath, "uploads/student", deletedFile);
+                FileManager.Delete(_env.WebRootPath, "uploads/students", deletedFile);
             }
 
         }

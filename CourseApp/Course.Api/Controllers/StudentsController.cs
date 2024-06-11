@@ -20,7 +20,7 @@ namespace Course.Api.Controllers
 		}
 
         [HttpPost("")]
-        public ActionResult Create(StudentCreateDto createDto)
+        public ActionResult Create([FromForm] StudentCreateDto createDto)
         {
                 
                 return StatusCode(201, new { id = _studentService.Create(createDto) });
@@ -41,14 +41,14 @@ namespace Course.Api.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, StudentUpdateDto updateDto)
+        public IActionResult Update(int id,[FromForm] StudentUpdateDto updateDto)
         {
 
 
             _studentService.Update(id, updateDto);
             return NoContent();
-
         }
+
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

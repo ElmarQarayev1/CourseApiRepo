@@ -51,7 +51,6 @@ namespace Course.Data.Repostories.Implementations
             foreach (var item in includes)
                 query = query.Include(item);
 
-
             return query.Where(predicate);
         }
 

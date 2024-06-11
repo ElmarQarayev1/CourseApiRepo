@@ -34,3 +34,4 @@
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Core/obj/Debug/net7.0/refint/Course.Core.dll
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Core/obj/Debug/net7.0/Course.Core.pdb
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Core/obj/Debug/net7.0/ref/Course.Core.dll
+/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Core/obj/Debug/net7.0/Course.Core.sourcelink.json

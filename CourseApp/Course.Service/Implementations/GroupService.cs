@@ -1,4 +1,5 @@
 ﻿using System;
+using AutoMapper;
 using Course.Core.Entities;
 using Course.Data;
 using Course.Data.Repostories.Interfaces;
@@ -15,12 +16,14 @@ namespace Course.Service.Implementations
     public class GroupService : IGroupService
     {
         private readonly IGroupRepository _groupRepository;
+        private readonly IMapper _mapper;
 
-        public GroupService(IGroupRepository groupRepository)
+        public GroupService(IGroupRepository groupRepository,IMapper mapper)
         {
             _groupRepository = groupRepository;
-
+            _mapper = mapper;
         }
+
         public int Create(GroupCreateDto createDto)
         {
             if (_groupRepository.Exists(x => x.No == createDto.No && !x.IsDeleted))
@@ -38,30 +41,19 @@ namespace Course.Service.Implementations
         }
         public List<GroupGetDto> GetAll(string? search=null)
         {
-            return _groupRepository.GetAll(x => x.No.Contains(search),"Students").Select(x => new GroupGetDto
-            {
-                Id = x.Id,
-                No = x.No,
-                Limit = x.Limit,
-                StudentCount=x.Students.Count
-            }).ToList();
+            var groups = _groupRepository.GetAll(x => search == null || x.No.Contains(search), "Students").ToList();
+            return _mapper.Map<List<GroupGetDto>>(groups);
         }
         public GroupDetailsDto GetById(int id)
         {
-            Group group = _groupRepository.Get(x => x.Id == id && !x.IsDeleted);
+            Group group = _groupRepository.Get(x => x.Id == id && !x.IsDeleted,"Students");
 
             if (group == null) throw new RestException(StatusCodes.Status404NotFound, "Group not found");
 
-            return new GroupDetailsDto
-            {
-                Id = group.Id,
-                No = group.No,
-                Limit = group.Limit,
-                StudentCount = group.Students.Count
-            };
-
-            // return Mapper<Group, GroupDetailsDto>.Map(group);
+            return _mapper.Map<GroupDetailsDto>(group);
+       
         }
+
 
         public void Update(int id, GroupUpdateDto updateDto)
         {
@@ -92,8 +84,7 @@ namespace Course.Service.Implementations
             entity.ModifiedAt = DateTime.Now;
             _groupRepository.Save();
         }
-
        
-    }
+   }
 }
 

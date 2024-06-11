@@ -1,14 +1,19 @@
 ﻿using System;
+using AutoMapper;
 using Course.Api.Middlewares;
+using Course.Core.Entities;
 using Course.Data;
 using Course.Data.Repostories.Implementations;
 using Course.Data.Repostories.Interfaces;
 using Course.Service.Dtos.GroupDtos;
+using Course.Service.Dtos.StudentDtos;
 using Course.Service.Exceptions;
 using Course.Service.Implementations;
 using Course.Service.Interfaces;
+using Course.Service.Profiles;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -28,6 +33,14 @@ builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
     };
 });
 
+
+
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+{
+    opt.Password.RequireNonAlphanumeric = false;
+    opt.Password.RequiredLength = 8;
+}).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -39,6 +52,13 @@ Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration).CreateLogger();
 
 builder.Host.UseSerilog();
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddSingleton(provider => new MapperConfiguration(cf =>
+{
+    cf.AddProfile(new MapProfile(provider.GetService<IHttpContextAccessor>()));
+}).CreateMapper());
 
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IGroupService, GroupService>();
@@ -54,6 +74,7 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
 builder.Services.AddValidatorsFromAssemblyContaining<CourseCreateDtoValidator>();
+
 
 var app = builder.Build();
 
