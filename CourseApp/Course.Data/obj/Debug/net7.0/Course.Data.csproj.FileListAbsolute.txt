@@ -48,5 +48,4 @@
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/obj/Debug/net7.0/Course.Data.pdb
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/obj/Debug/net7.0/Course.Data.genruntimeconfig.cache
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/obj/Debug/net7.0/ref/Course.Data.dll
-/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/obj/Debug/net7.0/Course.Data.sourcelink.json
-/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/obj/Debug/net7.0/Course.D.ABD6047F.Up2Date
+/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/obj/Debug/net7.0/Course.Data.csproj.CopyComplete

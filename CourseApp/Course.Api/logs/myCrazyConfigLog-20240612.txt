@@ -722,3 +722,21 @@ CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHER
 2024-06-12 01:23:50.515 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20240611212215_UsersTablesCreated', N'7.0.16');
+2024-06-12 14:49:49.357 +04:00 [INF] User profile is available. Using '/Users/elmar/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-12 14:49:49.566 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-12 14:49:49.567 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-12 14:49:49.567 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-12 14:49:49.568 +04:00 [INF] Hosting environment: Development
+2024-06-12 14:49:49.568 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-12 14:49:50.913 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-12 14:49:50.984 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 72.1858ms
+2024-06-12 14:49:51.091 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-12 14:49:51.138 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 46.3052ms
+2024-06-12 14:49:56.621 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Auth/users - -
+2024-06-12 14:49:56.634 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.AuthController.CreateUser (Course.Api)'
+2024-06-12 14:49:56.657 +04:00 [INF] Route matched with {action = "CreateUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser() on controller Course.Api.Controllers.AuthController (Course.Api).
+2024-06-12 14:49:56.747 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-06-12 14:49:56.749 +04:00 [INF] Executed action Course.Api.Controllers.AuthController.CreateUser (Course.Api) in 90.069ms
+2024-06-12 14:49:56.750 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.AuthController.CreateUser (Course.Api)'
+2024-06-12 14:49:56.750 +04:00 [INF] HTTP GET /api/Auth/users responded 200 in 120.7299 ms
+2024-06-12 14:49:56.751 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Auth/users - - - 200 - text/plain;+charset=utf-8 129.6365ms

@@ -307,5 +307,4 @@
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
 /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
-/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/obj/Debug/net7.0/Course.Api.sourcelink.json
-/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/obj/Debug/net7.0/Course.Api.csproj.Up2Date
+/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api/obj/Debug/net7.0/Course.Api.csproj.CopyComplete

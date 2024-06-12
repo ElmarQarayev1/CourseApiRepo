@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zXFSCxn5EWo=",
+  "dgSpecHash": "+6EJKtKNmtae/jjTyTZEOqmQdRQkq6FXGD05fqtEmtCAI20PSiOArkkIlab4RDc9CzgA8bDrqE0mQCmfKG4ayQ==",
   "success": true,
   "projectFilePath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Data/Course.Data.csproj",
   "expectedPackageFiles": [
@@ -71,9 +71,7 @@
     "/Users/elmar/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "/Users/elmar/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

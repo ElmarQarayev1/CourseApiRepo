@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jx3QOCgOA4g=",
+  "dgSpecHash": "MR3usJ24qSbSvSPemV4w1rBGegnslx8EFOmgwVvbiO4HB8ulBOafJZyU0ax+ldFlqndDoPVJWJ0hacW6+6eISQ==",
   "success": true,
   "projectFilePath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Core/Course.Core.csproj",
   "expectedPackageFiles": [
@@ -24,9 +24,7 @@
     "/Users/elmar/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
     "/Users/elmar/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/elmar/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "/Users/elmar/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

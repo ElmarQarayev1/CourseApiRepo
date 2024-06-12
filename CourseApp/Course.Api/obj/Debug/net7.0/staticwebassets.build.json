@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ycCladxIpRujoO7FkLe6vb9jnN/QyB6mFzNpGsnEp7c=",
+  "Hash": "89Fg3ctD6thvSm2QUoZJPfxhh709Wm71D5YO8SEEa0c=",
   "Source": "Course.Api",
   "BasePath": "_content/Course.Api",
   "Mode": "Default",
@@ -26,8 +26,6 @@
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
